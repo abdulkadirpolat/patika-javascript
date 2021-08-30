@@ -1,7 +1,7 @@
 const menuContainer = document.querySelector(".menu-container");
 const buttons = document.querySelector(".buttons");
 
-fetch("asian_kichen.json")
+fetch("asian_kitchen.json")
   .then((response) => response.json())
   .then((json) => {
     return jsonData(json), loadedData(json);
