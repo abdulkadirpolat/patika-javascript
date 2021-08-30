@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  background-color: #f1f5f8;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1320px;
+  margin: 0 auto 0 auto;
+  min-height: 100vh;
+  font-family: "Architects Daughter", cursive;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.container .title {
+  font-size: 50px;
+  margin-top: 20px;
+  color: #ff6a23;
+  font-family: "Allison", cursive;
+}
+
+.container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.container .buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px 13px;
+  margin-left: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  letter-spacing: 1px;
+}
+
+.container .buttons button:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container .buttons button:focus {
+  -webkit-box-shadow: 0 0 0 4px gray;
+          box-shadow: 0 0 0 4px gray;
+}
+
+.container .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.container .menu-container .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 50%;
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 970px) {
+  .container .menu-container .menu-item {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.container .menu-container .menu-item .card-image {
+  height: 175px;
+  min-width: 175px;
+}
+
+@media only screen and (max-width: 970px) {
+  .container .menu-container .menu-item .card-image {
+    height: 130px;
+    min-width: 130px;
+  }
+}
+
+.container .menu-container .menu-item .card-image .card-img {
+  width: 100%;
+  height: 175px;
+  border-radius: 10px;
+  border: 4px solid black;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 970px) {
+  .container .menu-container .menu-item .card-image .card-img {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+.container .menu-container .menu-item .menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .menu-container .menu-item .menu-info {
+    font-size: 14px;
+  }
+}
+
+.container .menu-container .menu-item .menu-info .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-bottom: 10px;
+  color: #e00a00;
+}
+
+.container .menu-container .menu-item .menu-info .about {
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container .menu-container .menu-item .menu-info .about {
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+}
+/*# sourceMappingURL=app.css.map */
