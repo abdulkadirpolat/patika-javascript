@@ -1,0 +1,146 @@
+@import "media-query";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+:root {
+  background-color: #f1f5f8;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1320px;
+  margin: 0 auto 0 auto;
+  min-height: 100vh;
+  font-family: "Architects Daughter", cursive;
+  letter-spacing: 1px;
+  @include responsive(desktop) {
+    max-width: 1200px;
+  }
+  @include responsive(laptop) {
+    max-width: 900px;
+  }
+  @include responsive(tablet) {
+      max-width: 750px;
+  }
+  @include responsive(phone) {
+      max-width: 500px;
+  }
+   
+  .title {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #ff6a23;
+    font-family: "Allison", cursive;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      padding: 10px 13px;
+      margin-left: 15px;
+      border-radius: 5px;
+      border: 1px solid black;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background-color: black;
+      color: white;
+      transition: all 0.2s;
+    }
+
+    button:focus {
+      box-shadow: 0 0 0 4px gray;
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .menu-item {
+      display: flex;
+      height: 200px;
+      width: 50%;
+      margin: 10px 0;
+      padding: 0 15px;
+  
+      @include responsive(tablet) {
+      width: 100%;
+      height: 150px;
+      }
+
+      .card-image {
+        height: 175px;
+        min-width: 175px;
+ 
+        @include responsive(tablet) {
+          height: 130px;      
+          min-width: 130px;
+            }
+
+        .card-img {
+          width: 100%;
+          height: 175px;
+          border-radius: 10px;
+          border: 4px solid black;
+          object-position: center;
+          object-fit: cover;
+          
+          @include responsive(tablet) {
+            height: 130px;
+            width: 130px;
+              }
+        }
+      }
+
+      .menu-info {
+        margin-left: 20px;
+        width: 100%;
+
+        @include responsive(phone) {
+          font-size: 14px;
+             }
+
+        .menu-title {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          border-bottom: 1px solid black;
+          width: 100%;
+          padding-bottom: 10px;
+          color: #e00a00;
+
+        }
+
+        .about {
+          margin-top: 20px;
+          max-width: 420px;
+
+          @include responsive(phone) {
+            margin-top: 10px;
+           line-height: 1.3;
+              }
+        }
+      }
+    }
+  }
+}
